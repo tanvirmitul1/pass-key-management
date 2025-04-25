@@ -8,7 +8,7 @@ import AllUsers from "@/components/users/AllUsers";
 
 export default async function Home() {
   const users = await prisma.user.findMany();
-
+  console.log(users);
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
